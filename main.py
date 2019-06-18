@@ -1,7 +1,9 @@
 import tensorflow as tf
 from tensorflow.examples.tutorials.mnist import input_data
 import numpy as np
-from scipy.misc import imsave
+#from scipy.misc import imsave
+from imageio import imwrite as imsave
+#imsave is deprecated! imsave is deprecated in SciPy 1.0.0, and will be removed in 1.2.0. Use imageio.imwrite instead.
 import os
 import shutil
 from PIL import Image
